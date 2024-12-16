@@ -8,6 +8,7 @@ import lombok.Data;
 public class PurchaseInDTO {
     private Integer motorcycle_id;
 
-
+    @Column(columnDefinition = "date")
+    private LocalDate purchaseDate = LocalDate.now();
 
 }
